@@ -12,7 +12,7 @@ const linkList = ref([
 </script>
 
 <template>
-  <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-3 md:py-5 shadow">
+  <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-5 md:py-5 shadow-md">
     <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
       aria-label="Global">
       <div class="flex items-center justify-between">
@@ -54,15 +54,12 @@ const linkList = ref([
 
 
           <div class="flex items-center gap-x-2 sm:ms-auto">
-            <a class="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600" href="#">
-              <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
-              Log in
+            <a href="#"
+              class="py-2 px-3 mx-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#2B6797] text-white hover:bg-blue-900 disabled:opacity-50 disabled:pointer-events-none">
+              Gabung Sekarang
             </a>
+            <img class="h-14 rounded-full border border-gray-600" src="@/assets/images/home/rein-circle.png"
+              alt="Image Description">
           </div>
         </div>
       </div>
