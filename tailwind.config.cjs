@@ -12,7 +12,8 @@ export default {
         'biznext-primary': '#1E3344',
         'biznext-secondary': '#8BB0CB',
         'biznext-tertiary': '#D9E6EE',
-        'biznext-quaternary': '#F5F9FC'
+        'biznext-quaternary': '#F5F9FC',
+        'biznext-primary-dark': '#375E7B'
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif']
