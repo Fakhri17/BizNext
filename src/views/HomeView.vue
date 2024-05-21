@@ -451,7 +451,7 @@ const isAccordionActive = (index) => {
                 class="hs-accordion bg-biznext-tertiary border border-transparent rounded-xl mb-5"
                 :id="`hs-active-bordered-heading-${index}`">
                 <button
-                  class="hs-accordion-toggle inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start py-4 px-5 text-2xl disabled:pointer-events-none"
+                  class="hs-accordion-toggle inline-flex justify-between items-center gap-x-3 w-full font-bold text-start py-4 px-5 text-2xl disabled:pointer-events-none"
                   aria-controls="hs-basic-active-bordered-collapse-${index}`">
                   {{ item }}
                   <Icon icon="ion:chevron-down-outline" class="hs-accordion-active:hidden block text-3xl" />
