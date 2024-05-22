@@ -445,7 +445,7 @@ const isAccordionActive = (index) => {
             </ul>
           </div>
           <div class="lg:col-span-2">
-            <div class="hs-accordion-group">
+            <div class="hs-accordion-group" data-hs-accordion-always-open>
 
               <div v-for="(item, index) in titleAccordion" :key="index"
                 class="hs-accordion bg-biznext-tertiary border border-transparent rounded-xl mb-5"
