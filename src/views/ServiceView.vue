@@ -103,7 +103,7 @@ const articleList = ref([
           </p>
         </div>
       </div>
-      <div class="grid lg:grid-cols-2 gap-10">
+      <div class="grid md:grid-cols-2 gap-10">
         <div v-for="(item, index) in serviceList" :key="index"
           class="flex flex-col bg-biznext-tertiary shadow-sm rounded-xl p-5 lg:p-8 h-full relative">
           <div class="">
@@ -114,8 +114,8 @@ const articleList = ref([
               <div class="absolute inset-0 flex items-end p-5">
                 <div class="w-full">
                   <div class="lg:flex lg:flex-wrap lg:items-end">
-                    <div class="flex-1 lg:pr-20 mb-1 lg:mb-0">
-                      <h2 class="text-white font-bold text-2xl lg:text-4xl">{{ item.title }}</h2>
+                    <div class="flex-1 pr-0 xl:pr-20 mb-1 lg:mb-0">
+                      <h2 class="text-white font-bold text-2xl lg:text-3xl xl:text-4xl">{{ item.title }}</h2>
                     </div>
                     <div class="flex-none lg:px-4 mb-5 lg:mb-0">
                       <h2 class="text-white font-bold text-2xl">{{ item.price }}</h2>
@@ -185,7 +185,7 @@ const articleList = ref([
       </div>
     </div>
   </section>
-  <section class="my-24 mt-40">
+  <section class="my-24 lg:mt-40">
     <div class="md:container md:mx-auto px-4">
       <div class="section-title mb-10">
         <h2 class="font-bold text-2xl">Artikel</h2>

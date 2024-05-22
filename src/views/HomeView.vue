@@ -284,8 +284,8 @@ const isAccordionActive = (index) => {
           </div>
         </div>
       </div>
-      <div class="flex flex-wrap justify-center gap-4">
-        <div v-for="(item, index) in benefitList" :key="index" class="w-full lg:max-w-80">
+      <div class="flex flex-wrap justify-center -mx-4 lg:gap-1">
+        <div v-for="(item, index) in benefitList" :key="index" class="w-full md:w-1/2 lg:w-1/4 px-2 py-3 mb-7">
           <div :class="index % 2 == 0 ? 'bg-biznext-tertiary' : 'bg-white'"
             class="block h-full shadow-lg rounded-xl border border-gray-200 py-5 px-10 text-center">
             <div class="block mx-auto mb-4">
@@ -359,22 +359,21 @@ const isAccordionActive = (index) => {
         <p class="text-2xl">Mereka sudah merasakan serunya belajar skill digital dan meraih karier yang mereka
           inginkan. Kamu selanjutnya?</p>
       </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 md:gap-10 items-center">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 md:gap-10 items-stretch">
         <div v-for="(item, index) in testimoni" :key="index"
-          class="bg-white border rounded-xl shadow-sm sm:flex relative mb-16 md:mb-20">
+          class="bg-white border rounded-xl shadow-sm md:flex relative mb-16 md:mb-20">
           <div
             class="bg-biznext-secondary relative w-full rounded-t-xl overflow-hidden sm:rounded-s-xl md:rounded-se-none md:max-w-xs">
           </div>
-          <div class="px-7 py-10">
-            <div class="relative md:top-[-33%] md:left-[30%] inline-block mx-auto">
-              <img class="size-[80px] md:size-[100px] rounded-full border border-gray-600" :src="`${item.image}`"
+          <div class="flex flex-col flex-grow px-7 py-10">
+            <div class="relative md:top-[-15%] lg:top-[-25%] inline-block mx-auto">
+              <img class="size-[80px] lg:size-[100px] rounded-full border border-gray-600" :src="`${item.image}`"
                 alt="Image Description">
             </div>
-            <div class="relative inline-block mx-auto md:top-[-20%] md:left-[25%] ml-5 md:ml-0">
-              <img class="" :src="`${item.company}`" alt="Image Description">
+            <div class="relative inline-block ml-auto lg:top-[-20%]">
+              <img :src="`${item.company}`" alt="Image Description">
             </div>
-
-            <div class="md:-mt-11">
+            <div class="lg:-mt-11 flex-grow">
               <h3 class="text-lg font-bold">
                 {{ item.name }}
               </h3>
@@ -387,7 +386,6 @@ const isAccordionActive = (index) => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
