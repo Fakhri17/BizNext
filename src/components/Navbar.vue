@@ -63,7 +63,7 @@ const linkList = ref([
                 </div>
               </div>
             </div>
-            <a href="#"
+            <a href="daftar"
               class="py-2 px-3 mx-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#2B6797] text-white hover:bg-blue-900 disabled:opacity-50 disabled:pointer-events-none">
               Gabung Sekarang
             </a>

@@ -7,7 +7,7 @@ import Footer from './components/Footer.vue';
 const route = useRoute()
 
 // Define the routes where you don't want to show the Navbar and Footer
-const hideNavbarAndFooterRoutes = ['/daftar', '/login']
+const hideNavbarAndFooterRoutes = ['/daftar', '/masuk']
 </script>
 
 <template>
