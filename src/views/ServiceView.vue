@@ -194,7 +194,7 @@ const articleList = ref([
       </div>
       <div class="grid lg:grid-cols-3 gap-8">
         <div v-for="(item, index) in articleList" :key="index"
-          class="flex flex-col bg-biznext-quaternary border shadow-md border-gray-300 rounded-[2.5rem]">
+          class="flex flex-col bg-biznext-quaternary border shadow-md border-gray-300 rounded-[3.5rem]">
           <img class="w-full h-auto" :src="item.image" alt="Image Description">
           <div class="p-6">
             <div>

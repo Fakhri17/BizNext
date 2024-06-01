@@ -1,14 +1,14 @@
 <script setup>
-import { ref } from 'vue';
-import { RouterLink, useRoute } from 'vue-router';
+import { ref } from 'vue'
+import { RouterLink, useRoute } from 'vue-router'
 
-const route = useRoute();
+const route = useRoute()
 
 const linkList = ref([
   { name: 'Beranda', url: '/' },
   { name: 'Tentang Kami', url: '/tentang-kami' },
-  { name: 'Layanan', url: '/layanan' },
-]);
+  { name: 'Layanan', url: '/layanan' }
+])
 </script>
 
 <template>
@@ -21,7 +21,7 @@ const linkList = ref([
         </a>
         <div class="sm:hidden">
           <button type="button"
-            class="hs-collapse-toggle size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none "
+            class="hs-collapse-toggle size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
             data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation"
             aria-label="Toggle navigation">
             <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -45,22 +45,30 @@ const linkList = ref([
         <div
           class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
           <a v-for="(item, index) in linkList" :key="index" :href="item.url">
-            <span :class="route.path === item.url ? 'font-bold' : 'font-normal'" class="text-base">
+            <span :class="route.path === item.url ? 'font-bold' : 'font-normal'" class="text-base hover:font-bold">
               {{ item.name }}
             </span>
           </a>
 
-
-
-
-
           <div class="flex items-center gap-x-2 sm:ms-auto">
+            <div class="max-w-sm space-y-3 border border-gray-300 rounded-lg shadow">
+              <div>
+                <div class="relative">
+                  <input type="text" id="hs-leading-icon" name="hs-leading-icon"
+                    class="py-3 px-4 ps-11 block w-full border-gray-200 bg-gray-100 shadow-sm rounded-lg text-base"
+                    placeholder="cari" />
+                  <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-4">
+                    <Icon icon="clarity:search-line" class="text-xl" />
+                  </div>
+                </div>
+              </div>
+            </div>
             <a href="#"
               class="py-2 px-3 mx-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#2B6797] text-white hover:bg-blue-900 disabled:opacity-50 disabled:pointer-events-none">
               Gabung Sekarang
             </a>
             <img class="h-14 rounded-full border border-gray-600" src="@/assets/images/home/rein-circle.png"
-              alt="Image Description">
+              alt="Image Description" />
           </div>
         </div>
       </div>

@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/layanan',
       name: 'service',
       component: () => import('../views/ServiceView.vue')
+    },
+    {
+      path: '/daftar',
+      name: 'register',
+      component: () => import('../views/RegisterView.vue')
     }
     // {
     //   path: '/:pathMatch(.*)*',

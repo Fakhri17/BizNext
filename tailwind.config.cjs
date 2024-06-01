@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -8,6 +10,9 @@ export default {
   darkMode: ['selector', '[data-mode="dark"]'],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ['Poppins', ...defaultTheme.fontFamily.sans]
+      },
       colors: {
         'biznext-primary': '#1E3344',
         'biznext-secondary': '#8BB0CB',
