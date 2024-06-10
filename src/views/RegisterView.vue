@@ -15,7 +15,7 @@ const togglePasswordVisibility = () => {
 					<img class="" src="@/assets/images/biznext-1.png" alt="Logo" />
 				</div>
 				<div class="text mb-10">
-					<h2 class="text-white lg:text-4xl xl:text-5xl font-semibold mb-5">Selamat datang di NYRI</h2>
+					<h2 class="text-white lg:text-4xl xl:text-5xl font-semibold mb-5">Selamat datang di BizNext</h2>
 					<p class="text-white lg:text-4xl xl:text-5xl font-semibold mb-3">Bergabung</p>
 					<p class="text-white lg:text-4xl xl:text-5xl font-semibold mb-3">Sekarang !</p>
 				</div>

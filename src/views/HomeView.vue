@@ -20,8 +20,10 @@ import telkomIndo from '@/assets/images/home/telkom-indo.png'
 import kuanta from '@/assets/images/home/kuanta.png'
 import autokirim from '@/assets/images/home/autokirim.png'
 import otakkanan from '@/assets/images/home/otakkanan.png'
-import markplus from '@/assets/images/home/markplus.png'
-import logampt from '@/assets/images/home/logam-pt.png'
+// import image1_1 from '@/assets/images/biznext-logo.png'
+import carousel_image1 from '@/assets/images/home/hero-image.png'
+import carousel_image2 from '@/assets/images/home/carousel2.png'
+import carousel_image3 from '@/assets/images/home/carousel3.png'
 
 const benefitList = ref([
   {
@@ -131,38 +133,52 @@ const testimoni = ref([
 ])
 
 const imageCompany = ref([
+
+])
+
+const accordionContent = ref([
   {
-    image: telu,
+    title: 'Apa itu BizNext?',
+    content: 'BizNext adalah sebuah platform yang membantu mahasiswa untuk mencapai impian karir mereka khususnya di Program Studi Bisnis Digital!'
   },
   {
-    image: indibiz,
+    title: 'Materi apa yang dipelajari saat bootcamp?',
+    content: 'Materi yang akan  dipelajari akan berbeda-beda tergantung dari bootcamp yang dipilih. Silahkan cek Layanan kamu ya untuk informasi lengkapnya '
   },
   {
-    image: telkomIndo,
+    title: 'Bootcampnya berapa lama?',
+    content: 'Silakan cek di katalog pelatihan BizNext untuk durasi setiap programnya ya.'
   },
   {
-    image: kuanta,
+    title: 'Bagaimana tahapan program bootcamp ini?',
+    content: 'Pendaftaran akun > pilih course > daftar course > pembayaran > pelatihan > mendapatkan sertifikasi'
+  },
+
+])
+
+
+const slidesList = ref([
+  {
+    title: 'Persiapkan',
+    subtitle: 'Kariermu Bersama',
+    image: carousel_image1,
+    description: 'Ikuti Program Bootcamp Intensif Kembangkan Skill dan Mulai Rintis Karirmu!'
   },
   {
-    image: autokirim,
+    title: 'Dapatkan',
+    subtitle: 'potongan 20%',
+    image: carousel_image2,
+    description: 'Khusus untuk mahasiswa dan Alumni mahasiswa bisnis Digital Telkom University Surabaya',
   },
   {
-    image: otakkanan,
-  },
-  {
-    image: markplus,
-  },
-  {
-    image: logampt,
+    title: 'Dapatkan',
+    subtitle: 'Free Konsultasi',
+    image: carousel_image3,
+    description: 'Perencanaan karier dengan Mentor terbaik kita khusus untuk 10 pembeli pertama',
   },
 ])
 
-const titleAccordion = ref([
-  'Apa itu BizNext?',
-  'Materi apa yang dipelajari saat bootcamp?',
-  'Bootcampnya berapa lama?',
-  'Bagaimana tahapan program bootcamp ini?',
-])
+
 
 const isAccordionActive = (index) => {
   return index
@@ -171,26 +187,30 @@ const isAccordionActive = (index) => {
 
 </script>
 
+
 <template>
   <section class="my-24">
     <div class="md:container md:mx-auto px-4">
       <Carousel class="">
-        <Slide v-for="slide in 3" :key="slide">
+        <Slide v-for="(item, index) in slidesList" :key="index">
           <div class="bg-biznext-quaternary w-full py-14 px-14 rounded-md">
             <div class="grid lg:grid-cols-2 gap-4 items-center">
-              <div class="text-left">
-                <h1 class="font-bold text-5xl">Persiapkan</h1>
-                <div class="flex flex-wrap items-stretch">
-                  <h2 class="font-bold text-5xl">Kariermu Bersama</h2>
-                  <img class="h-9 self-center" src="@/assets/images/biznext-logo.png" alt="Logo" />
-                </div>
-
-              </div>
               <div class="">
-                <img class="w-full h-auto" src="@/assets/images/home/hero-image.png" alt="Logo" />
+                <img src="@/assets/images/biznext-logo.png" alt="Logo" class="mb-1.5" />
+                <div class="text-left">
+                  <h1 class="font-bold text-5xl mb-1">
+                    {{ item.title }}
+                  </h1>
+                  <h2 class="font-bold text-5xl">{{ item.subtitle }}</h2>
+                  <p class="mt-4">{{ item.description }}</p>
+                </div>
+              </div>
+              <div>
+                <img class="w-full h-full" :src="item.image" alt="Hero Image" />
               </div>
             </div>
           </div>
+
         </Slide>
 
         <template #addons>
@@ -307,15 +327,117 @@ const isAccordionActive = (index) => {
 
   <section class="my-24 mt-40">
     <div class="md:container md:mx-auto px-4">
-      <div class="text-center mb-20">
-        <div class="inline-block rounded-full bg-biznext-tertiary py-2 px-6">
-          <h2 class="text-biznext-primary uppercase font-bold text-3xl">Tahapan Belajar</h2>
-        </div>
-      </div>
-      <div class="my-10">
-        <img src="@/assets/images/home/timeline.png" alt="...">
-      </div>
+      <div
+        class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:border-l-2 before:border-dotted before:border-black">
 
+        <!-- Item #1 -->
+        <div
+          class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+          <!-- Icon -->
+          <div
+            class="flex items-center justify-center w-12 h-12 rounded-full border-4 border-biznext-primary-dark bg-white   group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/3 md:group-even:translate-x-1/3">
+            <Icon icon="mdi:user-plus-outline" class="text-black text-2xl" />
+          </div>
+          <!-- Card -->
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-7 rounded border border-slate-200 shadow">
+            <div class="mb-1">
+              <p class="font-bold text-[#29465B] text-base">Tahap 1</p>
+              <div class="font-bold text-2xl my-2">Pendaftaran</div>
+            </div>
+            <div class="text-sm">Daftar program bootcamp intensif BizNext disini.</div>
+          </div>
+        </div>
+
+        <!-- Item #2 -->
+        <div
+          class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+          <!-- Icon -->
+          <div
+            class="flex items-center justify-center w-12 h-12 rounded-full border-4 border-biznext-primary-dark bg-white   group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/3 md:group-even:translate-x-1/3">
+            <Icon icon="carbon:touch-1" class="text-black text-2xl" />
+          </div>
+          <!-- Card -->
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-7 rounded border border-slate-200 shadow">
+            <div class="mb-1">
+              <p class="font-bold text-[#29465B] text-base">Tahap 2</p>
+              <div class="font-bold text-2xl my-2">Pilih Course</div>
+            </div>
+            <div class="text-sm">Peserta memilih course yang diminati</div>
+          </div>
+        </div>
+
+        <div
+          class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+          <!-- Icon -->
+          <div
+            class="flex items-center justify-center w-12 h-12 rounded-full border-4 border-biznext-primary-dark bg-white   group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/3 md:group-even:translate-x-1/3">
+            <Icon icon="mdi:education-outline" class="text-black text-2xl" />
+          </div>
+          <!-- Card -->
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-7 rounded border border-slate-200 shadow">
+            <div class="mb-1">
+              <p class="font-bold text-[#29465B] text-base">Tahap 3</p>
+              <div class="font-bold text-2xl my-2">Daftar Course</div>
+            </div>
+            <div class="text-sm">Daftar ke course yang sudah Anda pilih</div>
+          </div>
+        </div>
+
+        <div
+          class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+          <!-- Icon -->
+          <div
+            class="flex items-center justify-center w-12 h-12 rounded-full border-4 border-biznext-primary-dark bg-white   group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/3 md:group-even:translate-x-1/3">
+            <Icon icon="solar:wallet-money-outline" class="text-black text-2xl" />
+          </div>
+          <!-- Card -->
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-7 rounded border border-slate-200 shadow">
+            <div class="mb-1">
+              <p class="font-bold text-[#29465B] text-base">Tahap 4</p>
+              <div class="font-bold text-2xl my-2">Pembayaran</div>
+            </div>
+            <div class="text-sm">Melakukan pembayaran untuk mengikuti program bootcamp intensif BizNext</div>
+          </div>
+        </div>
+
+        <div
+          class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+          <!-- Icon -->
+          <div
+            class="flex items-center justify-center w-12 h-12 rounded-full border-4 border-biznext-primary-dark bg-white   group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/3 md:group-even:translate-x-1/3">
+            <Icon icon="mdi:teacher" class="text-black text-2xl" />
+          </div>
+          <!-- Card -->
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-7 rounded border border-slate-200 shadow">
+            <div class="mb-1">
+              <p class="font-bold text-[#29465B] text-base">Tahap 5</p>
+              <div class="font-bold text-2xl my-2">Pelatihan</div>
+            </div>
+            <div class="text-sm">Peserta mengikuti pelatihan secara online sesuai dengan waktu dan kurikulum yang sudah
+              ditentukan.</div>
+          </div>
+        </div>
+
+        <div
+          class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+          <!-- Icon -->
+          <div
+            class="flex items-center justify-center w-12 h-12 rounded-full border-4 border-biznext-primary-dark bg-white   group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/3 md:group-even:translate-x-1/3">
+            <Icon icon="ph:certificate" class="text-black text-2xl" />
+          </div>
+          <!-- Card -->
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-7 rounded border border-slate-200 shadow">
+            <div class="mb-1">
+              <p class="font-bold text-[#29465B] text-base">Tahap 6</p>
+              <div class="font-bold text-2xl my-2">Mendapatkan Sertifikat</div>
+            </div>
+            <div class="text-sm">Setelah menyelesaikan course, peserta akan mendapatkan sertifikasi serta benefit yang
+              lainnya yaitu join komunitas </div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
   </section>
 
@@ -445,13 +567,13 @@ const isAccordionActive = (index) => {
           <div class="lg:col-span-2">
             <div class="hs-accordion-group" data-hs-accordion-always-open>
 
-              <div v-for="(item, index) in titleAccordion" :key="index"
-                class="hs-accordion bg-biznext-tertiary border border-transparent rounded-xl mb-5"
+              <div v-for="(item, index) in accordionContent" :key="index"
+                class="hs-accordion bg-biznext-tertiary hs-accordion-active:bg-[#e6f5fe] border border-transparent transition-all duration-300 rounded-xl mb-5"
                 :id="`hs-active-bordered-heading-${index}`">
                 <button
-                  class="hs-accordion-toggle inline-flex justify-between items-center gap-x-3 w-full font-bold text-start py-4 px-5 text-2xl disabled:pointer-events-none"
+                  class="hs-accordion-toggle hs-accordion-active:text-[#5385AC] transition-all duration-300 inline-flex justify-between items-center gap-x-3 w-full font-bold text-start py-4 px-5 text-2xl disabled:pointer-events-none"
                   aria-controls="hs-basic-active-bordered-collapse-${index}`">
-                  {{ item }}
+                  {{ item.title }}
                   <Icon icon="ion:chevron-down-outline" class="hs-accordion-active:hidden block text-3xl" />
                   <Icon icon="ion:chevron-up-outline" class="hs-accordion-active:block hidden text-3xl" />
 
@@ -460,9 +582,8 @@ const isAccordionActive = (index) => {
                   class="hs-accordion-content w-full hidden overflow-hidden transition-[height] duration-300"
                   aria-labelled:by="`hs-active-bordered-heading-${index}`">
                   <div class="pb-4 pl-5 pr-10">
-                    <p class="text-lg">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Nullam
-                      ultricies, nunc nec vehicula ultricies, nunc nec vehicula ultricies, nunc nec vehicula
+                    <p class="text-base">
+                      {{ item.content }}
                     </p>
                   </div>
                 </div>

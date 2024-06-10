@@ -46,7 +46,7 @@ const listTeam = ref([
           <h2 class="text-black text-5xl font-bold">Tentang Kami </h2>
         </div>
       </div>
-      <h1 class="text-center text-biznext-primary font-bold text-3xl">Yuk kenal NYRI lebih jauh dan temukan tim kami
+      <h1 class="text-center text-biznext-primary font-bold text-3xl">Yuk kenal BizNext lebih jauh dan temukan tim kami
         yang siap membimbing Anda melangkah maju dalam dunia bisnis
         digital yang dinamis</h1>
     </div>
@@ -68,16 +68,16 @@ const listTeam = ref([
         <div class="grid lg:grid-cols-2 gap-10 mt-16">
           <div class="text-center px-12">
             <h3 class="font-bold text-2xl mb-5">Membangun Kesiapan Karier</h3>
-            <p class="text-lg">Menjadi pionir dalam pelatihan karier yang terintegrasi untuk mahasiswa bisnis digital
-              dengan pembelajaran
-              yang terintegrasi sehingga para lulusan siap menghadapi tantangan industri bisnis digital
+            <p class="text-lg">Menjadi platform yang terintegrasi menjadi satu dalam memberikan pelatihan karier baik
+              dari segi teori maupun praktik tentang profil lulusan mahasiswa bisnis digital
+
             </p>
           </div>
           <div class="text-center px-12">
             <h3 class="font-bold text-2xl mb-5">Membangun Kesiapan Karier</h3>
-            <p class="text-lg">Menjadi pionir dalam pelatihan karier yang terintegrasi untuk mahasiswa bisnis digital
-              dengan pembelajaran
-              yang terintegrasi sehingga para lulusan siap menghadapi tantangan industri bisnis digital
+            <p class="text-lg">ilmu dan pelatihan di BizNext dirancang untuk menghubungkan mahasiswa dengan para ahli
+              atau
+              sesama mahasiswa.Koneksi ini menjadi landasan sinergi yang meningkatkan daya saing di era digital.
             </p>
           </div>
         </div>
@@ -90,7 +90,7 @@ const listTeam = ref([
       <div class="text-center mx-auto max-w-[650px] mb-20">
         <h2 class="font-bold text-3xl text-biznext-primary-dark">TIM KAMI</h2>
         <div class="mt-10">
-          <p class="text-2xl">NYRI memiliki tim yang diisi oleh Mahasiswa Bisnis Digital Telkom University Surabaya.
+          <p class="text-2xl">BizNext memiliki tim yang diisi oleh Mahasiswa Bisnis Digital Telkom University Surabaya.
           </p>
         </div>
       </div>
@@ -121,13 +121,13 @@ const listTeam = ref([
             <img class="ml-3 h-10" src="@/assets/images/biznext-logo.png" alt="">
           </div>
           <div class="lg:pr-20">
-            <p class="mb-6 text-lg">NYRI hadir sebagai wadah pembelajaran intensif bagi mahasiswa bisnis digital.
+            <p class="mb-6 text-lg">BizNext hadir sebagai wadah pembelajaran intensif bagi mahasiswa bisnis digital.
               Meskipun
               berfokus pada
               mahasiswa bisnis digital Telkom University Surabaya, kami dengan tangan terbuka menyambut mahasiswa bisnis
               digital dari seluruh Indonesia.</p>
 
-            <p class="mb-6 text-lg">NYRI menawarkan pengalaman belajar yang mendalam dan intensif melalui Bootcamp
+            <p class="mb-6 text-lg">BizNext menawarkan pengalaman belajar yang mendalam dan intensif melalui Bootcamp
               selama
               5 hari
               kerja setiap
@@ -135,7 +135,7 @@ const listTeam = ref([
               kesempatan untuk bergabung dengan komunitas yang bersemangat dalam industri bisnis digital.</p>
 
             <p class="mb-6 text-lg">
-              Bergabunglah dengan NYRI, tempat di mana Anda bisa mendapatkan pengetahuan, keterampilan, dan jaringan
+              Bergabunglah dengan BizNext, tempat di mana Anda bisa mendapatkan pengetahuan, keterampilan, dan jaringan
               yang
               Anda butuhkan untuk meraih kesuksesan dalam karier bisnis digital Anda.</p>
           </div>

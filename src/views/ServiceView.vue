@@ -211,15 +211,6 @@ const articleList = ref([
           </div>
         </div>
       </div>
-      <div class="my-9">
-        <a href="#" class="font-bold text-3xl hover:underline">
-          <span class="flex items-center justify-end">
-            <span class="mb-2">Selengkapnya</span>
-            <Icon icon="fa-solid:chevron-right" class="text-2xl ml-2" />
-          </span>
-
-        </a>
-      </div>
     </div>
   </section>
 </template>

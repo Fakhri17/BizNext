@@ -20,7 +20,7 @@ const togglePasswordVisibility = () => {
 				<div class="mt-3 bg-white border border-gray-200 rounded-xl shadow-lg">
 					<div class="px-10 py-20">
 						<div class="text-center">
-							<h1 class="block text-2xl font-normal mb-2">NYRI for Business Digital</h1>
+							<h1 class="block text-2xl font-normal mb-2">BizNext for Business Digital</h1>
 							<h1 class="block text-2xl font-bold">Sign In</h1>
 						</div>
 
