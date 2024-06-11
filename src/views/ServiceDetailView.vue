@@ -11,6 +11,9 @@ import Ellipse16 from '@/assets/images/services/Ellipse-16.png'
 import Ellipse17 from '@/assets/images/services/Ellipse-17.png'
 import Ellipse18 from '@/assets/images/services/Ellipse-18.png'
 import Ellipse19 from '@/assets/images/services/Ellipse-19.png'
+import kelas_serupa_1 from '@/assets/images/services/kelas-serupa-1.png'
+import kelas_serupa_2 from '@/assets/images/services/kelas-serupa-2.png'
+import kelas_serupa_3 from '@/assets/images/services/kelas-serupa-3.png'
 
 const prospek = ([
   {
@@ -87,6 +90,33 @@ const materi = [
   'Mining & Visualizing Data',
   'Career Opportunities and Data Analysis in Action'
 ]
+
+const kelasSerupa = ref([
+  {
+    img: kelas_serupa_1,
+    lesson: '13 Lesson',
+    hour: '5 Hours',
+    title: 'Strong & Effective Marketing Plan',
+    review: '15 Review',
+    students: '235 Students',
+  },
+  {
+    img: kelas_serupa_2,
+    lesson: '8 Lesson',
+    hour: '2 Hours',
+    title: 'Digital Marketing with Google Ads',
+    review: '25 Review',
+    students: '250 Students',
+  },
+  {
+    img: kelas_serupa_3,
+    lesson: '10 Lesson',
+    hour: '4.5 Hours',
+    title: 'Search Engine Marketing (SEM)',
+    review: '20 Review',
+    students: '320 Students',
+  },
+])
 </script>
 
 <template>
@@ -392,6 +422,44 @@ const materi = [
           </a>
         </div>
 
+      </div>
+      <div class="my-10">
+        <p class="font-normal mb-5 text-lg">Kelas Serupa</p>
+        <div class="grid lg:grid-cols-3 gap-8">
+          <div v-for="(item, index) in kelasSerupa" :key="index"
+            class="flex flex-col bg-biznext-quaternary border shadow-sm rounded-xl">
+            <img class="w-full h-auto" :src="item.img" alt="Image Description">
+            <div class="p-4 md:p-5">
+              <ul class="mt-4 mb-2">
+                <li class="inline-block relative pe-4 text-sm text-[#818286] font-bold">
+                  <span class="flex items-center">
+                    <Icon icon="ant-design:book-outlined" class="mr-1 text-lg" />
+                    {{ item.lesson }}
+                  </span>
+                </li>
+                <li class="inline-block relative pe-4 text-sm text-[#818286] font-bold">
+                  <span class="flex items-center">
+                    <Icon icon="mdi:clock-outline" class="mr-1 text-lg" />
+                    {{ item.hour }}
+                  </span>
+                </li>
+              </ul>
+              <div class="flex items-center mb-3 space-x-3">
+                <div>
+                  <Icon v-for="item in 5" icon="noto-v1:star" class="inline-flex items-center text-xl mr-1" />
+                </div>
+                <div>
+                  <span class="text-[#818286] text-sm font-bold mb-0">({{ item.review }})</span>
+                </div>
+
+              </div>
+              <hr class="my-5 border-[#818286]">
+              <div class="text-end">
+                <span class="text-[#818286] text-sm font-bold mb-0">{{ item.students }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
