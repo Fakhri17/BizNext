@@ -4,7 +4,7 @@ import bcaVirtual from '@/assets/images/payment/bca-virtual.png'
 
 <template>
   <div class="mt-10 mb-20">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="logo mb-10">
         <img src="@/assets/images/biznext-logo.png" alt="">
       </div>

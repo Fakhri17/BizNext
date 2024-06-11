@@ -92,7 +92,7 @@ const articleList = ref([
 
 <template>
   <section class="my-24">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="text-center mx-auto max-w-[700px] mb-20">
         <h2 class="font-bold text-5xl">Layanan</h2>
         <h3 class="font-bold text-xl mt-5">Discover Your Path to Success with BizNext!</h3>
@@ -114,7 +114,10 @@ const articleList = ref([
                 <div class="w-full">
                   <div class="lg:flex lg:flex-wrap lg:items-end">
                     <div class="flex-1 pr-0 xl:pr-20 mb-1 lg:mb-0">
-                      <h2 class="text-white font-bold text-2xl lg:text-3xl xl:text-4xl">{{ item.title }}</h2>
+                      <a href="/layanan/digital-marketing">
+                        <h2 class="text-white font-bold text-2xl lg:text-3xl xl:text-4xl">{{ item.title }}</h2>
+                      </a>
+
                     </div>
                     <div class="flex-none lg:px-4 mb-5 lg:mb-0">
                       <h2 class="text-white font-bold text-2xl">{{ item.price }}</h2>
@@ -185,7 +188,7 @@ const articleList = ref([
     </div>
   </section>
   <section class="my-24 lg:mt-40">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="section-title mb-10">
         <h2 class="font-bold text-2xl">Artikel</h2>
         <h3 class="font-normal text-xl mt-2">Biar otak nggak tegang, kami hadirkan bacaan yang asyik, menarik, dan penuh

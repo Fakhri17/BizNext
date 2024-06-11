@@ -37,7 +37,7 @@ const listTeam = ref([
 
 <template>
   <section class="my-24">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="relative mx-auto mt-20 mb-14">
         <img class="w-full h-52 object-cover rounded-lg"
           src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*8ipc84JyDB3jpl0tvljkLw.jpeg" alt="Random image">
@@ -52,7 +52,7 @@ const listTeam = ref([
     </div>
   </section>
   <section class="my-24">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="text-center mx-auto max-w-[700px] mb-20">
         <h2 class="font-bold text-3xl text-biznext-primary-dark">VISI</h2>
         <div class="mt-10">
@@ -86,7 +86,7 @@ const listTeam = ref([
   </section>
 
   <section class="my-24 mt-40">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="text-center mx-auto max-w-[650px] mb-20">
         <h2 class="font-bold text-3xl text-biznext-primary-dark">TIM KAMI</h2>
         <div class="mt-10">
@@ -110,7 +110,7 @@ const listTeam = ref([
   </section>
 
   <section class="my-24 mt-40">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="inline-block rounded-full bg-biznext-tertiary py-2 px-6">
         <h2 class="text-biznext-primary uppercase font-bold text-2xl">Tentang Program Bootcamp</h2>
       </div>

@@ -43,7 +43,7 @@ const linkList = ref([
       <div id="navbar-collapse-with-animation"
         class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
         <div
-          class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
+          class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:gap-y-0 sm:gap-x-4 lg:gap-x-7 sm:mt-0 sm:ps-7">
           <a v-for="(item, index) in linkList" :key="index" :href="item.url">
             <span :class="route.path === item.url ? 'font-bold' : 'font-normal'" class="text-base hover:font-bold">
               {{ item.name }}
@@ -51,7 +51,7 @@ const linkList = ref([
           </a>
 
           <div class="flex items-center gap-x-2 sm:ms-auto">
-            <div class="max-w-sm space-y-3 border border-gray-300 rounded-lg shadow">
+            <div class=" max-w-40 xl:max-w-sm space-y-3 border border-gray-300 rounded-lg shadow">
               <div>
                 <div class="relative">
                   <input type="text" id="hs-leading-icon" name="hs-leading-icon"
@@ -63,7 +63,7 @@ const linkList = ref([
                 </div>
               </div>
             </div>
-            <a href="daftar"
+            <a href="/daftar"
               class="py-2 px-3 mx-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#2B6797] text-white hover:bg-blue-900 disabled:opacity-50 disabled:pointer-events-none">
               Gabung Sekarang
             </a>

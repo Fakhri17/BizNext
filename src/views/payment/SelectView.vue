@@ -89,7 +89,7 @@ const ewallet = ([
 
 <template>
   <div class="mt-10 mb-20">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="logo mb-10">
         <img src="@/assets/images/biznext-logo.png" alt="">
       </div>
@@ -161,11 +161,15 @@ const ewallet = ([
                     <table class="min-w-full">
                       <tbody class="divide-y-2 divide-gray-200">
                         <tr v-for="(item, index) in bankTransfer" :key="index">
-                          <td class="px-4 py-4 whitespace-nowrap">
+                          <td class="px-2.5 py-4 whitespace-nowrap">
                             <img :src="item.image" alt="" class="w-12">
                           </td>
-                          <td class="px-4 py-4 whitespace-nowrap text-base text-black">Bank {{ item.title }}</td>
-                          <td class="px-4 py-4 whitespace-nowrap text-black">
+                          <td class="px-2.5 py-4 whitespace-nowrap text-base text-black">
+                            <a href="/pembayaran/detail">
+                              Bank {{ item.title }}
+                            </a>
+                          </td>
+                          <td class="px-2.5 py-4 whitespace-nowrap text-black">
                             <Icon icon="material-symbols-light:chevron-right" class="text-3xl" />
                           </td>
                         </tr>
@@ -191,11 +195,15 @@ const ewallet = ([
                     <table class="min-w-full">
                       <tbody class="divide-y-2 divide-gray-200">
                         <tr v-for="(item, index) in bankVirtual" :key="index">
-                          <td class="px-4 py-4 whitespace-nowrap">
+                          <td class="px-2.5 py-4 whitespace-nowrap">
                             <img :src="item.image" alt="" class="w-12">
                           </td>
-                          <td class="px-4 py-4 whitespace-nowrap text-base text-black">Bank {{ item.title }}</td>
-                          <td class="px-4 py-4 whitespace-nowrap text-black">
+                          <td class="px-2.5 py-4 whitespace-nowrap text-base text-black">
+                            <a href="/pembayaran/detail">
+                              {{ item.title }}
+                            </a>
+                          </td>
+                          <td class="py-4 whitespace-nowrap text-black">
                             <a href="/pembayaran/detail">
                               <Icon icon="material-symbols-light:chevron-right" class="text-3xl" />
                             </a>
@@ -224,11 +232,15 @@ const ewallet = ([
                     <table class="min-w-full">
                       <tbody class="divide-y-2 divide-gray-200">
                         <tr v-for="(item, index) in ewallet" :key="index">
-                          <td class="px-4 py-4 whitespace-nowrap">
+                          <td class="px-2.5 py-4 whitespace-nowrap">
                             <img :src="item.image" alt="" class="w-12">
                           </td>
-                          <td class="px-4 py-4 whitespace-nowrap text-base text-black">Bank {{ item.title }}</td>
-                          <td class="px-4 py-4 whitespace-nowrap text-black">
+                          <td class="px-2.5 py-4 whitespace-nowrap text-base text-black">
+                            <a href="/pembayaran/detail">
+                              {{ item.title }}
+                            </a>
+                          </td>
+                          <td class="px-2.5 py-4 whitespace-nowrap text-black">
                             <Icon icon="material-symbols-light:chevron-right" class="text-3xl" />
                           </td>
                         </tr>

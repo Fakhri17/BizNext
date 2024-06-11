@@ -190,7 +190,7 @@ const isAccordionActive = (index) => {
 
 <template>
   <section class="my-24">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <Carousel class="">
         <Slide v-for="(item, index) in slidesList" :key="index">
           <div class="bg-biznext-quaternary w-full py-14 px-14 rounded-md">
@@ -221,7 +221,7 @@ const isAccordionActive = (index) => {
     </div>
   </section>
   <section class="bg-biznext-primary py-10">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="grid lg:grid-cols-3 lg:items-center lg:justify-between">
         <div class="text-center text-white mb-5 lg:mb-0">
           <h2 class="font-bold text-7xl">102</h2>
@@ -239,10 +239,10 @@ const isAccordionActive = (index) => {
     </div>
   </section>
   <section class="my-24 mt-40">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="grid lg:grid-cols-2 gap-10 lg:gap-24 items-center">
         <div>
-          <img class="w-full h-auto" src="@/assets/images/home/foto-about.png" alt="Logo" />
+          <img class="w-full h-auto" src="@/assets/images/home/irma-about.png" alt="Logo" />
         </div>
         <div>
           <div class="inline-block rounded-full bg-biznext-tertiary py-2 px-6">
@@ -261,7 +261,7 @@ const isAccordionActive = (index) => {
     </div>
   </section>
   <section class="my-24 mt-40">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="bg-biznext-tertiary rounded-lg py-7 md:py-14 px-5">
         <div class="text-center">
           <h3 class="font-bold text-3xl mb-7">
@@ -285,7 +285,7 @@ const isAccordionActive = (index) => {
   </section>
 
   <section class="mb-24 mt-40">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="text-center mb-7">
         <div class="inline-block rounded-full bg-biznext-tertiary py-2 px-6">
           <h2 class="text-biznext-primary uppercase font-bold text-xl">Keuntungan bergabung dengan BizNext </h2>
@@ -326,7 +326,7 @@ const isAccordionActive = (index) => {
   </section>
 
   <section class="my-24 mt-40">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div
         class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:border-l-2 before:border-dotted before:border-black">
 
@@ -442,7 +442,7 @@ const isAccordionActive = (index) => {
   </section>
 
   <section class="my-24 mt-40">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="text-center mb-12">
         <h2 class="font-bold text-black text-3xl">Layanan Kami Berdasarkan</h2>
         <h2 class="font-bold text-black text-3xl">6 Profil Lulusan Bisnis Digital </h2>
@@ -473,7 +473,7 @@ const isAccordionActive = (index) => {
   </section>
 
   <section class="my-25 mt-40 py-16 bg-biznext-tertiary">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="text-center mb-40">
         <div class="inline-block rounded-full bg-biznext-primary py-2 px-10 mb-6">
           <h2 class="text-white uppercase font-bold text-3xl">Kata Alumni</h2>
@@ -516,7 +516,7 @@ const isAccordionActive = (index) => {
   </section>
 
   <section class="my-24 mt-40">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="inline-block rounded-full bg-biznext-tertiary py-2 px-6">
         <h2 class="text-biznext-primary uppercase font-bold text-3xl">MITRA KAMI </h2>
       </div>
@@ -545,7 +545,7 @@ const isAccordionActive = (index) => {
   </section>
 
   <section class="my-24 mt-40">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="inline-block rounded-full bg-biznext-tertiary py-2 px-6">
         <h2 class="text-biznext-primary uppercase font-bold text-3xl">PUSAT BANTUAN </h2>
       </div>
@@ -598,7 +598,7 @@ const isAccordionActive = (index) => {
   </section>
 
   <section class="my-24 mt-40">
-    <div class="md:container md:mx-auto px-4">
+    <div class="md:container md:mx-auto px-7">
       <div class="text-center mx-auto max-w-[740px] mb-20">
         <h2 class="font-bold text-3xl mb-7">Masih tidak menemukan apa yang kamu cari?</h2>
         <p class="text-xl">Jika kamu masih memiliki pertanyaan tambahan, Silahkan untuk menghubungi kami melaluiemail
