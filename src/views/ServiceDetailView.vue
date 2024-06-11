@@ -267,23 +267,23 @@ const kelasSerupa = ref([
               </div>
               <div class="mb-7">
                 <h3 class="text-[#b9b9b9] font-bold text-xl mb-5">Keterampilan yang akan Anda peroleh</h3>
-                <div class="block lg:flex flex-wrap space-x-10 items-start">
-                  <button type="button"
-                    class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-base font-normal rounded-xl border border-transparent bg-biznext-tertiary text-black">
+                <div class="block lg:flex flex-wrap gap-5 items-start">
+                  <div
+                    class="py-3 px-4 mb-3 inline-flex justify-center items-center gap-x-2 text-base font-normal rounded-xl border border-transparent bg-biznext-tertiary text-black">
 
                     Customer Relationship Management
 
-                  </button>
-                  <button type="button"
-                    class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-base font-normal rounded-xl border border-transparent bg-biznext-tertiary text-black">
+                  </div>
+                  <div
+                    class="py-3 px-4 mb-3 inline-flex justify-center items-center gap-x-2 text-base font-normal rounded-xl border border-transparent bg-biznext-tertiary text-black">
                     Data Analysis
-                  </button>
-                  <button type="button"
-                    class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-base font-normal rounded-xl border border-transparent bg-biznext-tertiary text-black">
+                  </div>
+                  <div
+                    class="py-3 px-4 mb-3 inline-flex justify-center items-center gap-x-2 text-base font-normal rounded-xl border border-transparent bg-biznext-tertiary text-black">
 
                     Data Visualization (Data Viz)
 
-                  </button>
+                  </div>
                 </div>
 
               </div>
