@@ -7,17 +7,36 @@ import Footer from './components/Footer.vue';
 const route = useRoute()
 
 // Define the routes where you don't want to show the Navbar and Footer
-const hideNavbarAndFooterRoutes = ['/daftar', '/masuk']
+const hideNavbarRoutes = [
+  '/daftar',
+  '/masuk',
+  '/pembayaran',
+  '/pembayaran/daftar',
+  '/pembayaran/pilih-pembayaran',
+  '/pembayaran/detail',
+  '/pembayaran/berhasil',
+  '/pembayaran/rincian-transaksi',
+
+]
+
+const hideFooterRoutes = [
+  '/daftar',
+  '/masuk',
+  // '/pembayaran/pilih-pembayaran',
+  // '/pembayaran/detail',
+  // '/pembayaran/berhasil',
+  // '/pembayaran/rincian-transaksi',
+]
 </script>
 
 <template>
   <div>
     <!-- Conditionally render Navbar and Footer -->
-    <div v-if="!hideNavbarAndFooterRoutes.includes(route.path)">
+    <div v-if="!hideNavbarRoutes.includes(route.path)">
       <Navbar />
     </div>
     <RouterView />
-    <div v-if="!hideNavbarAndFooterRoutes.includes(route.path)">
+    <div v-if="!hideFooterRoutes.includes(route.path)">
       <Footer />
     </div>
   </div>

@@ -108,8 +108,7 @@ const articleList = ref([
           class="flex flex-col bg-biznext-tertiary shadow-sm rounded-xl p-5 lg:p-8 h-full relative">
           <div class="">
             <div class="relative bg-white border shadow-sm rounded-xl h-full">
-              <img class="w-full h-full object-cover rounded-xl" src="@/assets/images/services/digital-marketing.png"
-                alt="Image Description">
+              <img class="w-full h-full object-cover rounded-xl" :src="item.image" alt="Image Description">
               <div class="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
               <div class="absolute inset-0 flex items-end p-5">
                 <div class="w-full">

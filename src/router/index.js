@@ -31,6 +31,31 @@ const router = createRouter({
       path: '/masuk',
       name: 'login',
       component: () => import('../views/LoginView.vue')
+    },
+    {
+      path: '/pembayaran/daftar',
+      name: 'payment-register',
+      component: () => import('../views/payment/RegisterView.vue')
+    },
+    {
+      path: '/pembayaran/pilih-pembayaran',
+      name: 'payment-select',
+      component: () => import('../views/payment/SelectView.vue')
+    },
+    {
+      path: '/pembayaran/detail',
+      name: 'payment-detail',
+      component: () => import('../views/payment/DetailView.vue')
+    },
+    {
+      path: '/pembayaran/berhasil',
+      name: 'payment-success',
+      component: () => import('../views/payment/SuccessView.vue')
+    },
+    {
+      path: '/pembayaran/rincian-transaksi',
+      name: 'payment-transaction-detail',
+      component: () => import('../views/payment/TransactionDetailView.vue')
     }
 
     // {
