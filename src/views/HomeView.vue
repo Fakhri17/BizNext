@@ -14,12 +14,15 @@ import irma from '@/assets/images/home/irma-circle.png'
 import shaula from '@/assets/images/home/shaula-circle.png'
 import mentari from '@/assets/images/home/mentari-circle.png'
 import nada from '@/assets/images/home/nada-circle.png'
+
 import telu from '@/assets/images/home/telu.png'
 import indibiz from '@/assets/images/home/indibiz.png'
 import telkomIndo from '@/assets/images/home/telkom-indo.png'
 import kuanta from '@/assets/images/home/kuanta.png'
 import autokirim from '@/assets/images/home/autokirim.png'
 import otakkanan from '@/assets/images/home/otakkanan.png'
+import markplus from '@/assets/images/home/markplus.png'
+import logam_pt from '@/assets/images/home/logam-pt.png'
 // import image1_1 from '@/assets/images/biznext-logo.png'
 import carousel_image1 from '@/assets/images/home/hero-image.png'
 import carousel_image2 from '@/assets/images/home/carousel2.png'
@@ -86,7 +89,7 @@ const layananList = ref([
   },
   {
     assetsPath: layanan6,
-    title: 'Produk Manager',
+    title: 'Product Manager',
     description: 'Menghubungkan strategi bisnis, desain, dan kebutuhan pelanggan untuk mengembangkan produk bernilai.',
     href: '#'
   },
@@ -133,7 +136,7 @@ const testimoni = ref([
 ])
 
 const imageCompany = ref([
-
+  telu, indibiz, telkomIndo, kuanta, autokirim, otakkanan, markplus, logam_pt
 ])
 
 const accordionContent = ref([
@@ -202,7 +205,13 @@ const isAccordionActive = (index) => {
                     {{ item.title }}
                   </h1>
                   <h2 class="font-bold text-5xl">{{ item.subtitle }}</h2>
-                  <p class="mt-4">{{ item.description }}</p>
+                  <p class="mt-4 mb-5">{{ item.description }}</p>
+                  <div v-if="index == 0">
+                    <a href="/daftar"
+                      class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#2B6797] text-white hover:bg-blue-900 disabled:opacity-50 disabled:pointer-events-none">
+                      Daftar Sekarang
+                    </a>
+                  </div>
                 </div>
               </div>
               <div>
@@ -292,7 +301,7 @@ const isAccordionActive = (index) => {
         </div>
       </div>
 
-      <div class="mx-auto max-w-[740px] mb-20">
+      <div class="mx-auto max-w-[778px] mb-20">
         <div class="grid lg:grid-cols-4 gap-8 items-center">
           <div class="col-span-2">
             <h2 class="font-bold text-2xl">Kenapa Kamu harus bergabung dengan <span
@@ -492,15 +501,15 @@ const isAccordionActive = (index) => {
               <img class="size-[80px] lg:size-[100px] rounded-full border border-gray-600" :src="`${item.image}`"
                 alt="Image Description">
             </div>
-            <div class="relative inline-block ml-auto lg:top-[-20%]">
+            <div class="absolute right-0 pr-4 top-16">
               <img :src="`${item.company}`" alt="Image Description">
             </div>
-            <div class="lg:-mt-11 flex-grow">
+            <div class=" flex-grow">
               <h3 class="text-lg font-bold">
                 {{ item.name }}
               </h3>
               <p class="mt-1 text-gray-500">
-                {{ item.description }}
+                "{{ item.description }}"
               </p>
               <div class="mt-5">
                 <div v-for="item in 5" class="inline-flex justify-center items-center ml-1">
@@ -528,8 +537,8 @@ const isAccordionActive = (index) => {
             </h2>
             <div class="my-10">
               <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 items-center">
-                <div v-for="(item, index) in imageCompany" :key="index" class="">
-                  <img class="block mx-auto" :src="`${item.image}`" alt="Image Description">
+                <div v-for="item in imageCompany" :key="index" class="">
+                  <img class="block mx-auto" :src="`${item}`" alt="Image Description">
                 </div>
               </div>
             </div>

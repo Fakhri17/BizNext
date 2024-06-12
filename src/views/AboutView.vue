@@ -19,7 +19,7 @@ const listTeam = ref([
   },
   {
     photo: nadaPhoto,
-    title: 'Nada Alvi',
+    title: 'Nada Alfi',
     jobs: 'Team Development',
   },
   {
@@ -67,14 +67,14 @@ const listTeam = ref([
         <h2 class="font-bold text-3xl text-biznext-primary-dark text-center">MISI</h2>
         <div class="grid lg:grid-cols-2 gap-10 mt-16">
           <div class="text-center px-12">
-            <h3 class="font-bold text-2xl mb-5">Membangun Kesiapan Karier</h3>
+            <h3 class="font-bold text-2xl mb-5">Kemudahan pembelajaran </h3>
             <p class="text-lg">Menjadi platform yang terintegrasi menjadi satu dalam memberikan pelatihan karier baik
               dari segi teori maupun praktik tentang profil lulusan mahasiswa bisnis digital
 
             </p>
           </div>
           <div class="text-center px-12">
-            <h3 class="font-bold text-2xl mb-5">Membangun Kesiapan Karier</h3>
+            <h3 class="font-bold text-2xl mb-5">Terjalinnya Koneksi</h3>
             <p class="text-lg">ilmu dan pelatihan di BizNext dirancang untuk menghubungkan mahasiswa dengan para ahli
               atau
               sesama mahasiswa.Koneksi ini menjadi landasan sinergi yang meningkatkan daya saing di era digital.
