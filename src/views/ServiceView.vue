@@ -112,16 +112,19 @@ const articleList = ref([
               <div class="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
               <div class="absolute inset-0 flex items-end p-5">
                 <div class="w-full">
-                  <div class="lg:flex lg:flex-wrap lg:items-end">
-                    <div class="flex-1 pr-0 xl:pr-20 mb-1 lg:mb-0">
+                  <div class="block lg:flex items-center">
+                    <div class="max-w-32">
                       <a href="/layanan/digital-marketing">
-                        <h2 class="text-white font-bold text-2xl lg:text-3xl xl:text-4xl">{{ item.title }}</h2>
+                        <h2 class="text-white font-bold text-2xl lg:text-3xl xl:text-4xl hover:underline">
+                          {{ item.title }}
+                        </h2>
                       </a>
+                    </div>
+                    <div class="ml-auto">
+                      <h2 class="text-white font-bold text-3xl">{{ item.price }}</h2>
+                    </div>
 
-                    </div>
-                    <div class="flex-none lg:px-4 mb-5 lg:mb-0">
-                      <h2 class="text-white font-bold text-2xl">{{ item.price }}</h2>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -131,19 +134,19 @@ const articleList = ref([
             <ul class="mt-4 mb-2">
               <li class="inline-block relative pe-4 text-sm text-[#818286] font-bold">
                 <span class="flex items-center">
-                  <Icon icon="ant-design:book-outlined" class="mr-1 text-lg" />
+                  <Icon icon="ant-design:book-outlined" class="mr-2 text-lg" />
                   2 Modul
                 </span>
               </li>
               <li class="inline-block relative pe-4 text-sm text-[#818286] font-bold">
                 <span class="flex items-center">
-                  <Icon icon="mdi:clock-outline" class="mr-1 text-lg" />
+                  <Icon icon="mdi:clock-outline" class="mr-2 text-lg" />
                   5 Hour
                 </span>
               </li>
               <li class="inline-block relative pe-4 text-sm text-[#818286] font-bold">
                 <span class="flex items-center">
-                  <Icon icon="majesticons:book-open-line" class="mr-1 text-lg" />
+                  <Icon icon="majesticons:book-open-line" class="mr-2 text-lg" />
                   7x Pertemuan
                 </span>
               </li>
@@ -163,9 +166,9 @@ const articleList = ref([
             <div class="mt-5 mb-10">
               <h4 class="font-bold text-lg mb-1">Benefit</h4>
               <ul class="list-disc list-outside text-[#818286] px-5">
-                <li>Now this is a story all about how, my life got flipped turned upside down</li>
-                <li>And I like to take a minute and sit right here</li>
-                <li>I'll tell you how I became the prince of a town called Bel-Air </li>
+                <li>Tutor berpengalaman dengan level Lead/Manager/Head.</li>
+                <li>Latihan dan praktik dengan membuat mini portofolio pada setiap live class.</li>
+                <li>Terdapat sesi persiapan karir untuk persiapan berkas lamaran kerja </li>
               </ul>
             </div>
           </div>

@@ -56,7 +56,7 @@ const linkList = ref([
                 <div class="relative">
                   <input type="text" id="hs-leading-icon" name="hs-leading-icon"
                     class="py-3 px-4 ps-11 block w-full border-gray-200 bg-gray-100 shadow-sm rounded-lg text-base"
-                    placeholder="cari" />
+                    placeholder="Cari Layanan" />
                   <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-4">
                     <Icon icon="clarity:search-line" class="text-xl" />
                   </div>
