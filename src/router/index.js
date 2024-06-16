@@ -23,9 +23,14 @@ const router = createRouter({
       component: () => import('../views/ServiceView.vue')
     },
     {
-      path: '/layanan/:slug',
-      name: 'service-detail',
-      component: () => import('../views/ServiceDetailView.vue')
+      path: '/layanan/digital-marketing',
+      name: 'digital-marketing',
+      component: () => import('../views/service/DigitalMarketingView.vue')
+    },
+    {
+      path: '/layanan/product-manager',
+      name: 'product-manager',
+      component: () => import('../views//service/ProductManagerView.vue')
     },
     {
       path: '/daftar',
@@ -38,9 +43,14 @@ const router = createRouter({
       component: () => import('../views/LoginView.vue')
     },
     {
-      path: '/pembayaran/daftar',
-      name: 'payment-register',
-      component: () => import('../views/payment/RegisterView.vue')
+      path: '/pembayaran/daftar/digital-marketing',
+      name: 'payment-register-digital-marketing',
+      component: () => import('../views/payment/RegisterDigitalMarketingView.vue')
+    },
+    {
+      path: '/pembayaran/daftar/product-manager',
+      name: 'payment-register-product-manager',
+      component: () => import('../views/payment/RegisterProductManagerView.vue')
     },
     {
       path: '/pembayaran/pilih-pembayaran',

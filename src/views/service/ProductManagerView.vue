@@ -4,9 +4,6 @@ import { ref } from 'vue'
 import girl1 from '@/assets/images/services/girl-1.png'
 import girl2 from '@/assets/images/services/girl-2.png'
 import girl3 from '@/assets/images/services/girl-3.png'
-import girl4 from '@/assets/images/services/girl-4.png'
-import girl5 from '@/assets/images/services/girl-5.png'
-import girl6 from '@/assets/images/services/girl-6.png'
 import Ellipse16 from '@/assets/images/services/Ellipse-16.png'
 import Ellipse17 from '@/assets/images/services/Ellipse-17.png'
 import Ellipse18 from '@/assets/images/services/Ellipse-18.png'
@@ -18,33 +15,18 @@ import kelas_serupa_3 from '@/assets/images/services/kelas-serupa-3.png'
 const prospek = ([
   {
     image: girl1,
-    title: 'Social Media Specialist',
-    price: 'Rp.15.000.000/bulan'
+    title: 'Product Manager',
+    price: 'Rp.9.000.000/bulan'
   },
   {
     image: girl2,
-    title: 'Copywriter',
-    price: 'Rp.12.000.000/bulan'
+    title: 'Chief Product Officer',
+    price: 'Rp.9.000.000/bulan'
   },
   {
     image: girl3,
-    title: 'SEO/SEM Specialist',
-    price: 'Rp.15.000.000/bulan'
-  },
-  {
-    image: girl4,
-    title: 'Perfomance Marketing',
-    price: 'Rp.15.000.000/bulan'
-  },
-  {
-    image: girl5,
-    title: 'Brand Strategist',
-    price: 'Rp.17.000.000/bulan'
-  },
-  {
-    image: girl6,
-    title: 'KOL Management',
-    price: 'Rp.12.000.000/bulan'
+    title: 'Manajer Senior Produk',
+    price: 'Rp.9.000.000/bulan'
   },
 ])
 
@@ -84,11 +66,11 @@ const cocok = ref([
 ])
 
 const materi = [
-  'Konsep Marketing dan Komunikasi Pemasaran',
-  'Mengenal Marketing Mix (4P & 4C Matrix)',
-  'Gathering and Wrangling Data',
-  'Mining & Visualizing Data',
-  'Career Opportunities and Data Analysis in Action'
+  'Product Management Basic',
+  'Product Manager Skillset',
+  'Business Integrated Product Roadmap',
+  'Building PRD (Product Requirements Document)',
+  'Scrum Introduc. & Scrum Implementation Using Tools'
 ]
 
 const kelasSerupa = ref([
@@ -135,21 +117,18 @@ const kelasSerupa = ref([
         </li>
 
         <li class="inline-flex items-center text-sm font-semibold text-black truncate" aria-current="page">
-          Digital Marketing
+          Product Manager
         </li>
       </ol>
       <div class="my-5">
         <div class="relative">
-          <img class="rounded-lg w-full h-96 object-cover block mx-auto"
-            src="@/assets/images/services/digital-marketing.png" alt="Image Description">
+          <img class="rounded-lg w-full h-96 object-cover block mx-auto" src="@/assets/images/services/product1.png"
+            alt="Image Description">
           <div class="absolute inset-0 flex items-end p-5">
             <div class="w-full">
               <div class="lg:flex lg:flex-wrap lg:items-end">
                 <div class="flex-1 pr-0 xl:pr-20 mb-1 lg:mb-0">
-                  <a href="/layanan/digital-marketing">
-                    <h2 class="text-white font-bold text-2xl lg:text-3xl xl:text-4xl">Digital
-                      Marketing</h2>
-                  </a>
+                  <h2 class="text-white font-bold text-2xl lg:text-3xl xl:text-4xl">Product Manager</h2>
 
                 </div>
 
@@ -160,11 +139,10 @@ const kelasSerupa = ref([
       </div>
       <div class="content my-10">
         <h3 class="font-normal text-3xl mb-7">Tentang</h3>
-        <p class="text-lg">Bootcamp Digital Marketing merupakan pelatihan online secara intensif dan live bersama
-          mentor expert dari Top
-          Companies di Indonesia. Materi Bootcamp ini dirancang secara terstruktur dari dasar hingga lanjut dengan
-          standar industri terkini. Bayangkan dirimu belajar langsung dengan yang menggagas campaign "Traveloka Dulu,
-          Jalan-jalan Kemudian." atau Lemonilo x NCT Dream! Asik, kan? </p>
+        <p class="text-lg">Bootcamp Produk Manager adalah pelatihan online intensif yang menyediakan pemahaman mendalam
+          tentang manajemen produk. Materi dirancang dari dasar hingga lanjut dengan standar industri terkini. Peserta
+          akan belajar konsep dasar, analisis pasar, pengembangan produk, dan strategi peluncuran. Mereka juga
+          berinteraksi dengan praktisi industri, memperluas jaringan, dan mendapatkan wawasan melalui studi kasus. </p>
         <div class="mt-10 mb-20">
           <h3 class="font-normal text-4xl mb-7 text-center">Prospek Karir</h3>
           <div class="grid lg:grid-cols-3 gap-10">
@@ -215,20 +193,21 @@ const kelasSerupa = ref([
           <h2 class="font-normal text-3xl mb-7">Detail Bootcamp</h2>
           <div class="grid lg:grid-cols-3 gap-10">
             <div class="lg:col-span-2">
-              <img class="w-full rounded-3xl mb-7" src="@/assets/images/digital-marketing-adalah-1200x675 2.png" alt="">
-              <p>Oleh Wachda <strong>Yuniar Rochmah, S.M., M.M.</strong></p>
-              <h2 class="font-normal text-3xl lg:text-5xl mt-5 mb-10">The Fundamental of Digital Marketing</h2>
+              <img class="w-full rounded-3xl mb-7" src="@/assets/images/services/product2.png" alt="">
+              <p>Oleh <strong>Caesareano Lafado Yesa, S.M.B., M.M</strong></p>
+              <h2 class="font-normal text-3xl lg:text-5xl mt-5 mb-10">Rancang Ide Product Digital
+                dengan Product Management</h2>
               <div class="">
                 <ul class="list-disc list-outside space-y-5">
-                  <li>Kursus ini memberi Anda pengenalan singkat tentang Digital Marketing, bagaimana perbedaan pemasran
-                    digital dan tradisional, dan alat yang digunakan dalam pekerjaan </li>
-                  <li>Anda akan belajar tentang langkah-langkah untuk merancang strategi pemasaran digital yang efektif,
-                    termasuk penentuan tujuan, penentuan target audiens, dan identifikasi platform dan alat yang tepat.
+                  <li>Kursus ini akan membekali Anda dengan pemahaman mendalam tentang manajemen produk dan bagaimana
+                    berkolaborasi secara efektif dengan tim pengembangan produk.</li>
+                  <li>Anda akan mempelajari konsep dasar pengalaman pengguna (UX) untuk dapat berkomunikasi dengan UX
+                    Designer dan Peneliti dengan lebih efektif.
                   </li>
-                  <li>Di akhir kursus ini Anda akan dapat memahami dasar-dasar dari digital marketing serta mengenal
-                    tools untuk mengetahui keputusan pembelian konsumen.
+                  <li>Anda akan memahami langkah-langkah untuk merancang strategi produk digital yang sukses, termasuk
+                    menentukan tujuan, mengidentifikasi pasar target, dan memilih platform dan alat yang sesuai.
                   </li>
-                  <li>Semua ini digabungkan dalam tugas akhir yang akan menguji pengetahuan Anda tentang materi kursus,
+                  <li> Semua ini digabungkan dalam tugas akhir yang akan menguji pengetahuan Anda tentang materi kursus,
                     dan memberikan skenario tugas analisis data dunia nyata.
                   </li>
                 </ul>
@@ -254,15 +233,14 @@ const kelasSerupa = ref([
               <div class="mb-7">
                 <h3 class="text-[#b9b9b9] font-bold text-xl mb-5">Apa yang akan kamu pelajari?</h3>
                 <ul class="list-disc list-outside space-y-5">
-                  <li>Menjelaskan apa itu Digital dan langkah awal yang penting dalam proses pemasaran</li>
-                  <li>Membedakan antara berbagai peran digital marketing seperti Social Media Specialist, Copywriter,
-                    Content Writer, SEO/SEM Specialist, Performance Marketing,  Brand Strategist, KOL Management, dan
-                    Customer Relationship Management
+                  <li>Pengembangan Keterampilan Manajerial:
+                    Pemahaman konsep produk dan peran manajer produk, serta pengembangan keterampilan kepemimpinan,
+                    komunikasi, analitis, dan pemecahan masalah, didukung dengan pemahaman etika digital dan literasi
+                    yang relevan dalam manajemen produk.</li>
+                  <li>Implementasi Praktis Metodologi Pengembangan Produk:
+                    Menerapkan metodologi pengembangan perangkat lunak seperti Scrum serta melacak kinerja produk dan
+                    menyampaikan presentasi efektif sebagai manajer produk.
                   </li>
-                  <li>Menjelaskan proses analisis data yang melibatkan pengumpulan, perselisihan, penambangan, dan
-                    visualisasi data
-                  </li>
-
                 </ul>
               </div>
               <div class="mb-7">
@@ -301,19 +279,17 @@ const kelasSerupa = ref([
               </div>
               <div class="mb-7">
                 <ul class="list-none list-inside font-bold mb-5">
-                  <li class="mb-2.5">Pengguna : 5.432</li>
+                  <li class="mb-2.5">Pengguna : 4.432</li>
                   <li class="mb-2.5">Bahasa : Indonesia</li>
                   <li class="mb-2.5">Terjemahan : English, Indonesia, Japan, and 4+ more</li>
-                  <li class="mb-2.5">Modul : 5 Kursus</li>
+                  <li class="mb-2.5">Modul : 2 Kursus</li>
                   <li class="mb-2.5">Durasi : 1 bulan</li>
                   <li class="mb-2.5">Sertifikat : Setelah menyelesaikan kursus</li>
                   <li class="mb-2.5">Tempat : Online</li>
-                  <li class="mb-2.5">Harga : Rp 125.000,-</li>
-
                 </ul>
                 <button type="button"
                   class="py-2 w-full px-4 inline-flex justify-center items-center gap-x-2 text-lg font-normal rounded-xl border border-transparent bg-biznext-secondary text-black">
-                  Harga : Rp.125.000,00
+                  Harga : Rp.140.000,00
                 </button>
               </div>
               <div>
@@ -416,7 +392,7 @@ const kelasSerupa = ref([
             </div>
 
           </div>
-          <a href="/pembayaran/daftar"
+          <a href="/pembayaran/daftar/product-manager"
             class="w-full py-3 px-4 inline-flex shadow-lg justify-center items-center gap-x-2 text-xl  font-bold rounded-lg border border-transparent bg-biznext-primary text-white ">
             GABUNG SEKARANG
           </a>
@@ -444,6 +420,7 @@ const kelasSerupa = ref([
                   </span>
                 </li>
               </ul>
+              <h3 class="font-semibold text-xl mb-3">{{ item.title }}</h3>
               <div class="flex items-center mb-3 space-x-3">
                 <div>
                   <Icon v-for="item in 5" icon="noto-v1:star" class="inline-flex items-center text-xl mr-1" />

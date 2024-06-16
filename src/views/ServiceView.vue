@@ -21,6 +21,7 @@ const serviceList = ref([
   {
     image: digitalMarketing,
     title: 'Digital Marketing',
+    href: '/layanan/digital-marketing', // Add this line
     price: 'Rp 125.000',
     desc: 'Pembelajaran tentang berbagai strategi pemasaran digital, termasuk SEO (Search Engine Optimization), SEM (Search Engine Marketing), PPC (Pay-Per-Click), media sosial, konten pemasaran, email pemasaran, dan lainnya.',
     mentor: 'Wachda Yuniar Rochmah, S.M., M.M.',
@@ -29,6 +30,7 @@ const serviceList = ref([
   {
     image: businessDevelopment,
     title: 'Business Development',
+    href: '#', // Add this line
     price: 'Rp 110.000',
     desc: 'Pembelajaran tentang dasar-dasar business development seperti strategi pengembangan bisnis, keterampilan negosiasi, Pembangunan kemitraan, keterampilan keuangan serta etika bisnis. ',
     mentor: 'Sekar Widyasari Putri, S.AB., M.Si.',
@@ -37,6 +39,7 @@ const serviceList = ref([
   {
     image: bussinessAnalyst,
     title: 'Bussiness Analyst',
+    href: '#',
     price: 'Rp 135.000',
     desc: 'Pembelajaran tentang  berbagai konsep dan praktik terkait analisis bisnis, termasuk strategi, pemodelan, analisis data, keuangan, persaingan, dan presentasi hasil analisis. ',
     mentor: 'Darlin Aulia, S.E., M.S.Ak',
@@ -45,6 +48,7 @@ const serviceList = ref([
   {
     image: productManager,
     title: 'Product Manager',
+    href: '/layanan/product-manager', // Add this line
     price: 'Rp 140.000',
     desc: 'Pembelajaran tentang dasar-dasar Product Manager seperti Pengembangan Produk, Strategi Produk, Penemuan Validasi pasar, Pemasaran produk, Metrik Produk dan lainnya. ',
     mentor: 'Caesareano Lafado Yesa, S.M.B., M.M.',
@@ -53,6 +57,7 @@ const serviceList = ref([
   {
     image: projectManager,
     title: 'Project Manager',
+    href: '#',
     price: 'Rp 145.000',
     desc: 'Pembelajaran  tentang berbagai konsep dan praktik terkait manajemen proyek, termasuk perencanaan, pengorganisasian, pengendalian, dan pelaporan proyek.',
     mentor: 'Dominggo Bayu Baskara, S.T., M.MT., PMP.',
@@ -61,6 +66,7 @@ const serviceList = ref([
   {
     image: technopreneur,
     title: 'Technopreneur',
+    href: '#',
     price: 'Rp 125.000',
     desc: 'Pembelajaran tentang berbagai konsep dan praktik terkait technopreneur termasuk pengembangan ide, model bisnis, pengembangan produk, pendanaan dan lainnya. ',
     mentor: 'Krisnayanti Aditasari, S.M., M.MT.',
@@ -114,7 +120,7 @@ const articleList = ref([
                 <div class="w-full">
                   <div class="block lg:flex items-center">
                     <div class="max-w-32">
-                      <a href="/layanan/digital-marketing">
+                      <a :href="item.href">
                         <h2 class="text-white font-bold text-2xl lg:text-3xl xl:text-4xl hover:underline">
                           {{ item.title }}
                         </h2>
